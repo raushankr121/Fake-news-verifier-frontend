@@ -14,6 +14,7 @@ function App() {
     setResult(null);
 
     
+    
     try {
       // Use axios to send a POST request to our Go backend
       const response = await axios.post('http://localhost:8080/scrape', {
