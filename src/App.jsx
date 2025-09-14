@@ -16,7 +16,7 @@ function App() {
     
     try {
       // Use axios to send a POST request to our Go backend
-      const response = await axios.post('https://fake-news-detector-e7z2.onrender.com', {
+      const response = await axios.post('http://localhost:8080/scrape', {
         url: url, // The data we're sending
       });
       setResult(response.data); // Store the AI's response in our state
