@@ -84,7 +84,7 @@ function App() {
       const response = await axios.post('https://fake-news-verifier-backend.onrender.com/scrape', { url: url });
       setResult(response.data);
     } catch (err) {
-      setError('Failed to get analysis. The server might be down or the URL is invalid/inaccessible.');
+      setError('Failed  to get analysis. The server might be down or the URL is invalid/inaccessible.');
       console.error(err);
     } finally {
       setLoading(false);
