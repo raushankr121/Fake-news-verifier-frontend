@@ -50,12 +50,11 @@ body {
 }
 
 .App-header h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
   background: linear-gradient(90deg, #ff8a00, #e52e71);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; /* Vendor prefix for older browsers */
+  background-clip: text;          /* Standard property for modern browsers */
+  -webkit-text-fill-color: transparent; /* This often works with background-clip: text */
+  color: transparent;              /* A fallback for compatibility */
 }
 
 .App-header p {
@@ -156,6 +155,7 @@ body {
 }
 
 /* Score Details & Progress Bars */
+
 .score-details h4 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
