@@ -81,7 +81,7 @@ function App() {
     setResult(null);
 
     try {
-      const response = await axios.post('http://localhost:8080/scrape', { url: url });
+      const response = await axios.post('https://fake-news-verifier-frontend-1.onrender.com/scrape', { url: url });
       setResult(response.data);
     } catch (err) {
       setError('Failed to get analysis. The server might be down or the URL is invalid/inaccessible.');
