@@ -18,8 +18,7 @@ function App() {
     const payload = mode === 'url' ? { url: url } : { text: text };
 
     try {
-      // Use the new /analyze endpoint (works for both)
-      const response = await fetch('http://localhost:8080/analyze', {
+        const response = await fetch('https://your-backend-name.onrender.com/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
