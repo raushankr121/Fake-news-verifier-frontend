@@ -18,7 +18,7 @@ function App() {
     const payload = mode === 'url' ? { url: url } : { text: text };
 
     try {
-        const response = await fetch('https://your-backend-name.onrender.com/analyze', {
+        const response = await fetch('https://fake-news-verifier-backend-1.onrender.com/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
